@@ -1,0 +1,116 @@
+/* 전역 변수 정의 */
+@property --text-color {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: orange;
+}
+
+:root {
+  /* 색상 팔레트 */
+  --white: #fff;
+  --black: #000;
+  --red: #f00;
+  --green: #0f0;
+  --blue: #00f;
+  --orange: orange;
+  --yellow: yellow;
+  --light-blue: aqua;
+
+  /* 주요 색상 */
+  --primary-color: var(--orange);
+  --secondary-color: var(--light-blue);
+  --accent-color: var(--yellow);
+  --border-color: var(--red);
+
+  /* size */
+  --default: 1rem;
+  --small: 0.75rem;
+  --medium: 0.875rem;
+  --large: 1.125rem;
+
+  --text12: 0.75rem;
+}
+
+.text-card-1 {
+  /* 지역 변수 정의 */
+  --bg-color: var(--green);
+  --border-color: var(--red);
+  /* --secondary-color 속성이 없을 때 대안으로 #2ecc71가 적용되도록 설정 */
+
+  h1 {
+    background-color: var(--bg-color);
+  }
+
+  p {
+    border-color: var(--border-color);
+    border-width: 10px;
+    border-style: solid;
+  }
+}
+.text-card-2 {
+  /* 지역 변수 정의 */
+  --bg-color: var(--blue);
+  --border-color: var(--green);
+  /* --secondary-color 속성이 없을 때 대안으로 #2ecc71가 적용되도록 설정 */
+
+  h1 {
+    background-color: var(--bg-color);
+  }
+
+  p {
+    border-color: var(--border-color);
+    border-width: 10px;
+    border-style: solid;
+  }
+}
+
+.wrapper {
+  button {
+    font-size: var(--font-size, 1rem);
+    background-color: var(--bg-color, #fff);
+    color: var(--text-color, #000);
+  }
+
+  button.open {
+    --font-size: var(--small);
+    --bg-color: var(--green);
+    --text-color: var(--red);
+  }
+  button.close {
+    --font-size: var(--default);
+  }
+  button.popup {
+    --font-size: var(--large);
+    --text-color: var(--blue);
+  }
+  button.info {
+    --font-size: var(--medium);
+  }
+}
+
+.container {
+  color: var(--text-color);
+  .parent {
+    --text-color: var(--red);
+    .child {
+      color: var(--text-color);
+    }
+  }
+}
+
+.lion {
+  border: 1px solid green;
+
+  .parent {
+    padding: inherit;
+    margin: 0px;
+
+    .child {
+      color: black;
+      border: 1px solid blue;
+      padding: inherit;
+      border-color: blue;
+      display: inline-block;
+    }
+  }
+}
