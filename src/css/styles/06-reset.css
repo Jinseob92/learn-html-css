@@ -1,0 +1,6 @@
+@import '/src/common/reset.css';
+
+ul {
+  margin-left: 50px;
+  padding-left: 50px;
+}
