@@ -1,0 +1,64 @@
+body {
+  font-family: 'SUIT', sans-serif;
+}
+
+h1 {
+  display: inline-block;
+}
+
+hr {
+  clear: both;
+}
+
+/* 멤버 서비스 */
+.member-service {
+  /* background-color: yellow; */
+  float: right;
+  margin-bottom: 10px;
+  color: black;
+
+  a {
+    text-transform: uppercase;
+  }
+  .item:visited {
+    color: black;
+  }
+
+  .item:hover {
+    color: blue;
+  }
+
+  .item {
+    text-decoration: none;
+  }
+
+  .item::before {
+    content: '|';
+    margin: 0 0.5em;
+  }
+
+  .item.first::before {
+    content: ' ';
+  }
+}
+
+/* 멤버 링크 */
+.member-link {
+  float: right;
+  li {
+    float: left;
+    list-style: none;
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    span {
+      margin: 0 0.5em;
+    }
+
+    a:visited {
+      color: black;
+    }
+  }
+}

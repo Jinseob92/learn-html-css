@@ -1,0 +1,144 @@
+@import '../../src/common/best-reset.css';
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
+body {
+  margin: 40px;
+}
+
+.Cart {
+  border: 5px solid black;
+  border-radius: 30px;
+  .basket {
+    margin-left: 20px;
+    margin-top: 20px;
+    img {
+      padding: 5px;
+    }
+    span {
+      font-size: 24px;
+      font-family: Pretendard;
+      font-style: normal;
+      line-height: normal;
+      font-weight: 700px;
+      vertical-align: middle;
+    }
+  }
+  hr {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .list {
+    margin: 20px;
+
+    .first-item {
+      margin: 8px;
+      margin-bottom: 20px;
+      img {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+      }
+      .context {
+        margin-left: 12px;
+        margin-right: 12px;
+        margin-bottom: 8px;
+        padding-top: 5px;
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 20px;
+        font-family: 'Pretendard', sans-serif;
+        .item-text {
+          margin-bottom: 8px;
+        }
+        .won {
+          font-size: 18px;
+          font-weight: 800px;
+        }
+      }
+      .first-button {
+        margin-top: 20px;
+        float: right;
+        padding: 2px 8px;
+        width: 61px;
+        height: 28px;
+        border-radius: 18px;
+        text-align: center;
+      }
+    }
+
+    .second-item {
+      margin: 8px;
+      margin-bottom: 20px;
+      img {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+      }
+      .context {
+        margin-left: 12px;
+        margin-right: 12px;
+        margin-bottom: 8px;
+        padding-top: 5px;
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 20px;
+        font-family: 'Pretendard', sans-serif;
+        .item-text {
+          margin-bottom: 8px;
+        }
+        .won {
+          font-size: 18px;
+          font-weight: 800px;
+        }
+      }
+      .first-button {
+        margin-top: 20px;
+        float: right;
+        padding: 2px 8px;
+        width: 61px;
+        height: 28px;
+        border-radius: 18px;
+        text-align: center;
+      }
+    }
+    .third-item {
+      margin: 8px;
+      img {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+      }
+      .context {
+        padding-top: 5px;
+        margin-left: 12px;
+        margin-right: 12px;
+        margin-bottom: 8px;
+        font-family: 'Pretendard', sans-serif;
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 20px;
+        .item-text {
+          margin-bottom: 8px;
+        }
+        .won {
+          font-size: 18px;
+          font-weight: 800px;
+        }
+      }
+      .first-button {
+        margin-top: 20px;
+        float: right;
+        padding: 2px 8px;
+        width: 61px;
+        height: 28px;
+        border-radius: 18px;
+      }
+    }
+  }
+  .result {
+    margin: 20px;
+    font-family: 'Pretendard', sans-serif;
+    font-size: 20px;
+    text-align: right;
+    font-weight: 900px;
+  }
+}

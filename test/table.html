@@ -3,12 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>마진오토 연습</title>
-    <link rel="stylesheet" href="/magin.css" />
+    <title>회고 장바구니 UI</title>
+    <link rel="stylesheet" href="./css/market.css" />
   </head>
   <body>
-    <div class="b">
-      <div class="a">마진</div>
+    <div class="Cart">
+      <div class="basket">
+        <img src="./basket images/cart.svg" alt="카트" />
+        <span>장바구니</span>
+      </div>
+      <hr />
+      <div class="list">
+        <div class="first-item">
+          <img src="./basket images/milk.png" alt="우유" />
+          <div class="context">
+            <div class="item-text">1A 우유 900mL</div>
+            <div class="won">1,870 원</div>
+          </div>
+          <button class="first-button" type="button">- 2 +</button>
+        </div>
+
+        <div class="second-item">
+          <img src="./basket images/vegetable.png" alt="우유" />
+          <div class="context">
+            <div class="item-text">맛있는 콩나물 500g</div>
+            <div class="won">1,280 원</div>
+          </div>
+          <button class="first-button" type="button">- 2 +</button>
+        </div>
+
+        <div class="third-item">
+          <img src="./basket images/dubu.png" alt="우유" />
+          <div class="context">
+            <div class="item-text">고소한 두부 1kg</div>
+            <div class="won">2,210 원</div>
+          </div>
+          <button class="first-button" type="button">- 1 +</button>
+        </div>
+      </div>
+      <hr />
+      <div class="result">구매 총액 : 8,600원</div>
     </div>
   </body>
 </html>
