@@ -1,0 +1,50 @@
+@import '/src/common/modern-reset.css';
+@import '/src/common/theme.css';
+@import '/src/common/a11y.css';
+@import '/src/common/base.css';
+
+.masonry-layout {
+  background: yellow;
+  column-count: 2;
+  column-gap: 2rem;
+
+  @media (min-width: 768px) {
+    column-count: 4;
+  }
+  @media (min-width: 1280px) {
+    column-count: 6;
+  }
+}
+
+figure {
+  border: 1px solid black;
+  padding: 1em;
+  margin: 1em 0;
+  &:first-child {
+    margin: 0;
+  }
+  break-inside: avoid;
+  display: grid;
+
+  img,
+  figcaption {
+    grid-area: 1/ 1/ 2/ 2;
+  }
+
+  img {
+    width: 100%;
+    filter: sepia();
+  }
+  figcaption {
+    color: white;
+    z-index: 1;
+    background: rgb(0, 0, 0 /0.7);
+    place-self: end start;
+    width: 100%;
+    inline-size: 100%;
+    padding: 1em;
+  }
+  &:hover {
+    filter: none;
+  }
+}

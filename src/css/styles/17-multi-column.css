@@ -1,0 +1,66 @@
+@import '/src/common/modern-reset.css';
+@import '/src/common/theme.css';
+@import '/src/common/a11y.css';
+@import '/src/common/base.css';
+
+/* 다단 레이아웃을 적용한 컨테이너 */
+.container {
+  background: var(--pastel-lavender);
+  padding: 1em;
+
+  .case {
+    margin-block: 20px;
+  }
+
+  /* case-01 column-width */
+  .case-01 {
+    column-width: 15rem;
+    column-rule: 1px solid red;
+    column-gap: 2rem;
+  }
+
+  /* case-02 column-count */
+  .case-02 {
+    column-count: 4;
+    column-rule: 1px dotted green;
+
+    span {
+      display: block;
+      column-span: all;
+      background: var(--pastel-blue);
+      color: var(--white);
+      padding: 0.5em;
+    }
+  }
+
+  /* case-03 : columns 단축 속성에 column-width 선언 */
+  .case-03 {
+    columns: 3;
+    column-rule: 4px double blue;
+  }
+
+  /* case-04 : columns 단축 속성에 column-width 선언 */
+  .case-04 {
+    column-fill: balance;
+    columns: 2;
+  }
+
+  /* case-05 : columns 단축 속성에 column-width 선언 */
+  .case-05 {
+    display: block;
+    column-fill: balance;
+    height: 100px;
+    block-size: 500px;
+    columns: 2;
+  }
+}
+
+.wrapper {
+  background: var(--pastel-yellow);
+  padding: 1em;
+  columns: 6;
+
+  .case {
+    break-after: always;
+  }
+}

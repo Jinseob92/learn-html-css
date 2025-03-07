@@ -1,0 +1,50 @@
+@import '/src/common/modern-reset.css';
+@import '/src/common/theme.css';
+
+/* 플렉스를 활용한 반응형 레이아웃 */
+/* 헤더 */
+.header {
+  background: var(--pastel-coral);
+  height: 10vh;
+}
+
+/* 내비게이션 */
+.navigation {
+  background: var(--pastel-green);
+  height: 15vh;
+}
+
+.flex {
+  @media (min-width: 768px) {
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: row;
+  }
+  /* 메인 콘텐츠 */
+  .content {
+    background: var(--pastel-aqua);
+    height: 40vh;
+    @media (min-width: 768px) {
+      flex-grow: 1;
+      block-size: 65vh;
+      order: -1;
+    }
+  }
+
+  /* 사이드 바 */
+  .sidebar {
+    background: var(--pastel-yellow);
+    height: 25vh;
+    @media (min-width: 768px) {
+      flex-grow: 1;
+      block-size: 65vh;
+      order: 0;
+    }
+  }
+}
+
+/* 푸터 */
+.footer {
+  background: var(--pastel-lavender);
+  height: 10vh;
+}
